@@ -1,21 +1,197 @@
 * {
     box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+    color: rgb(32, 32, 32);
+    font-size: 16px;
 }
+
+p {
+    font-size: 16px;
+    font-family: 'Roboto Mono', monospace;
+}
+
 
 html, body {
     padding: 0;
     margin: 0;
+    /* overflow: hidden; */
 }
 
 #container {
     width: 100vw;
     height: 100vh;
+    max-width: 100%;
+    background: rgb(32, 32, 32);
 }
 
-#main {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 1px solid black;
+#nav {
+    width: 100%;
+    max-width: 100%;
 }
+
+#sidebar {
+    order: 1;
+    text-align: left;
+    padding: 20px;
+}
+
+#projectDiv {
+    order: 2;
+    text-align: left;
+    padding: 20px;
+    background: rgb(238, 238, 238);
+    overflow: auto;
+}
+
+#projectList{
+    display: none;
+}
+
+h1 {
+    font-family: 'Roboto Mono', serif;
+    font-size: 44px;
+    line-height: 1.5;
+    /* font-weight: 600; */
+    letter-spacing: 5px;
+    text-align: left;
+}
+
+h2 {
+    font-family: 'Roboto Mono', serif;
+    font-size: 32px;
+    line-height: 1.5;
+    /* font-weight: 600; */
+    letter-spacing: 5px;
+    text-align: left;
+}
+
+h3 {
+    font-family: 'Roboto Mono', serif;
+    font-size: 24px;
+    line-height: 1.5;
+    /* font-weight: 800; */
+    letter-spacing: 3px;
+    text-align: left;
+    color: rgb(238, 238, 238);
+    
+}
+
+.projectLink {
+    font-family: 'Roboto Mono', monospace;
+    text-transform: lowercase;
+    text-decoration: none;
+    color: #c4c4c4;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#projectImg {
+    /* border: 2px solid rgb(32, 32, 32); */
+    margin: 20px 0 20px 0;
+}
+
+.nav {
+    font-family: 'Roboto Mono', monospace;
+    text-transform: lowercase;
+    text-decoration: none;
+    color: #c4c4c4;
+    font-size: 16px;
+}
+
+a:hover {
+    font-style: oblique;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    /* For phone only: */
+    #container {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    #sidebar {
+        width: 100%;
+    }
+
+    #projectDiv {
+        width: 100%;
+    }
+
+    #nav {
+        display: flex;
+        flex-flow: row nowrap;
+        margin: 0 0 20px 0;
+    }
+    
+    #projectImg {
+        width: 90%;
+    }
+    
+}
+
+@media only screen and (min-width: 600px) {
+    /* For tablet portrait and up: */
+    #container {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    #sidebar {
+        width: 100%;
+    }
+
+    #projectDiv {
+        width: 100%;
+    }
+
+    #nav {
+        display: flex;
+        flex-flow: row nowrap;
+        margin: 0 0 20px 0;
+    }
+    #projectImg {
+        width: 90%;
+    }
+    
+    
+    
+}
+
+@media only screen and (min-width: 900px) {
+    /* For tablet landscape and up: */
+
+    #container {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    #sidebar {
+        width: 15%;
+        height: 100%;
+    }
+
+    #projectDiv {
+        width: 85%;
+        height: 100%;
+    }
+
+    #nav {
+        display: flex;
+        flex-flow: column nowrap;
+        margin: 20px 0 20px 0;
+    }
+
+    #projectImg {
+        width: 80%;
+    }
+    
+
+}
+
+/* @media only screen and (min-width: 1200px) { */
+    /* For desktop and up: */
+
+/* } */
