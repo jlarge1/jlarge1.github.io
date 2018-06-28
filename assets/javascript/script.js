@@ -49,7 +49,7 @@ function projectTrainSchedule() {
     $("#projectTitle").text("Train Schedule");
     $("#projectP").text("A train scheduling application.");
     $("#imgLink").attr("href", "https://jlarge1.github.io/TrainSchedule/").attr("target", "_blank");
-    $("#projectImg").attr("src", "assets/media/TS.png");
+    $("#projectImg").attr("src", "assets/media/ts.png");
     $("#projectDes").text("This train schedule uses firebase to store data.").append("<br><br><br><br><br><br><br><br><br><br><br><br>").append("more coming soon");
 };
 
@@ -63,7 +63,7 @@ function projectCrystalGame() {
     $("#projectTitle").text("Crystal Collector Game");
     $("#projectP").text("A simple Javascript game.");
     $("#imgLink").attr("href", "https://jlarge1.github.io/unit-4-game/").attr("target", "_blank");
-    $("#projectImg").attr("src", "assets/media/CC.png");
+    $("#projectImg").attr("src", "assets/media/cc.png");
     $("#projectDes").text("This project allowed me to experiment with the design of the site.").append("<br><br><br><br><br><br><br><br><br><br><br><br>").append("more coming soon");
 };
 
@@ -77,7 +77,7 @@ function projectTweetAnalysis() {
     $("#projectTitle").text("Politician Tweet Analysis");
     $("#projectP").text("A tool to analysis the words of politicians.");
     $("#imgLink").attr("href", "https://jlarge1.github.io/Project1/").attr("target", "_blank");
-    $("#projectImg").attr("src", "assets/media/PTA.png");
+    $("#projectImg").attr("src", "assets/media/pta.png");
     $("#projectDes").text("This was a group project. My role was to work on the text anaylsis. I used the Indico API for anaylsis and displayed the data in charts created with Chart.js").append("<br><br><br><br><br><br><br><br><br><br><br><br>").append("more coming soon");
 };
 
