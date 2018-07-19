@@ -61,7 +61,7 @@ body {
 
 
 #nav {
-    background: #FFA255;
+    background: #C0DBF0;
     position: fixed;
     bottom: 0px;
     left: 0px;
@@ -109,10 +109,10 @@ h3 {
 }
 
 #main {
-    background: linear-gradient(#FFA255 8%, white);
+    background: linear-gradient(#C0DBF0 8%, white);
 }
 #about {
-    background: linear-gradient(white, #FFA255);
+    background: linear-gradient(white, #C0DBF0);
 }
 
 @media only screen and (max-width: 600px) {
